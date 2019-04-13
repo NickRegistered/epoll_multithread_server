@@ -180,6 +180,6 @@ void writeLogLine(const char* str){
     time(&t);
     char *time = ctime(&t);
     time[strlen(time)-1] = '\0';
-	printf("\n[%s]\n%s\n",time,str);
+	printf("\n[%s]\t%s\n",time,str);
     return;
 }
